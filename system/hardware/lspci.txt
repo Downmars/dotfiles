@@ -1,0 +1,307 @@
+00:00.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Phoenix Root Complex
+	Subsystem: Advanced Micro Devices, Inc. [AMD] Phoenix Root Complex
+	Flags: fast devsel
+
+00:00.2 IOMMU: Advanced Micro Devices, Inc. [AMD] Phoenix IOMMU
+	Subsystem: Lenovo Device 3817
+	Flags: bus master, fast devsel, latency 0, IRQ 25
+	Capabilities: <access denied>
+
+00:01.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Phoenix Dummy Host Bridge
+	Flags: fast devsel, IOMMU group 0
+
+00:01.2 PCI bridge: Advanced Micro Devices, Inc. [AMD] Phoenix GPP Bridge (prog-if 00 [Normal decode])
+	Subsystem: Advanced Micro Devices, Inc. [AMD] Device 1453
+	Flags: bus master, fast devsel, latency 0, IRQ 30, IOMMU group 1
+	Bus: primary=00, secondary=01, subordinate=01, sec-latency=0
+	I/O behind bridge: [disabled] [32-bit]
+	Memory behind bridge: 98e00000-98efffff [size=1M] [32-bit]
+	Prefetchable memory behind bridge: [disabled] [64-bit]
+	Capabilities: <access denied>
+	Kernel driver in use: pcieport
+
+00:01.3 PCI bridge: Advanced Micro Devices, Inc. [AMD] Phoenix GPP Bridge (prog-if 00 [Normal decode])
+	Subsystem: Advanced Micro Devices, Inc. [AMD] Device 1453
+	Flags: bus master, fast devsel, latency 0, IRQ 31, IOMMU group 2
+	Bus: primary=00, secondary=02, subordinate=02, sec-latency=0
+	I/O behind bridge: 6000-6fff [size=4K] [16-bit]
+	Memory behind bridge: 98d00000-98dfffff [size=1M] [32-bit]
+	Prefetchable memory behind bridge: [disabled] [64-bit]
+	Capabilities: <access denied>
+	Kernel driver in use: pcieport
+
+00:02.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Phoenix Dummy Host Bridge
+	Flags: fast devsel, IOMMU group 3
+
+00:02.1 PCI bridge: Advanced Micro Devices, Inc. [AMD] Phoenix GPP Bridge (prog-if 00 [Normal decode])
+	Subsystem: Advanced Micro Devices, Inc. [AMD] Device 1453
+	Flags: bus master, fast devsel, latency 0, IRQ 32, IOMMU group 4
+	Bus: primary=00, secondary=03, subordinate=03, sec-latency=0
+	I/O behind bridge: [disabled] [32-bit]
+	Memory behind bridge: 98c00000-98cfffff [size=1M] [32-bit]
+	Prefetchable memory behind bridge: [disabled] [64-bit]
+	Capabilities: <access denied>
+	Kernel driver in use: pcieport
+
+00:02.2 PCI bridge: Advanced Micro Devices, Inc. [AMD] Phoenix GPP Bridge (prog-if 00 [Normal decode])
+	Subsystem: Advanced Micro Devices, Inc. [AMD] Device 1453
+	Flags: bus master, fast devsel, latency 0, IRQ 33, IOMMU group 5
+	Bus: primary=00, secondary=04, subordinate=04, sec-latency=0
+	I/O behind bridge: [disabled] [32-bit]
+	Memory behind bridge: [disabled] [32-bit]
+	Prefetchable memory behind bridge: 8010900000-8010afffff [size=2M] [32-bit]
+	Capabilities: <access denied>
+	Kernel driver in use: pcieport
+
+00:02.4 PCI bridge: Advanced Micro Devices, Inc. [AMD] Phoenix GPP Bridge (prog-if 00 [Normal decode])
+	Subsystem: Advanced Micro Devices, Inc. [AMD] Device 1453
+	Flags: bus master, fast devsel, latency 0, IRQ 34, IOMMU group 6
+	Bus: primary=00, secondary=05, subordinate=05, sec-latency=0
+	I/O behind bridge: [disabled] [32-bit]
+	Memory behind bridge: 98b00000-98bfffff [size=1M] [32-bit]
+	Prefetchable memory behind bridge: [disabled] [64-bit]
+	Capabilities: <access denied>
+	Kernel driver in use: pcieport
+
+00:03.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Phoenix Dummy Host Bridge
+	Flags: fast devsel, IOMMU group 7
+
+00:04.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Phoenix Dummy Host Bridge
+	Flags: fast devsel, IOMMU group 8
+
+00:04.1 PCI bridge: Advanced Micro Devices, Inc. [AMD] Family 19h USB4/Thunderbolt PCIe tunnel (prog-if 00 [Normal decode])
+	Subsystem: Advanced Micro Devices, Inc. [AMD] Device 1453
+	Flags: bus master, fast devsel, latency 0, IRQ 35, IOMMU group 8
+	Bus: primary=00, secondary=06, subordinate=64, sec-latency=0
+	I/O behind bridge: 2000-5fff [size=16K] [16-bit]
+	Memory behind bridge: 80000000-97ffffff [size=384M] [32-bit]
+	Prefetchable memory behind bridge: 7000000000-7fffffffff [size=64G] [32-bit]
+	Capabilities: <access denied>
+	Kernel driver in use: pcieport
+
+00:08.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Phoenix Dummy Host Bridge
+	Flags: fast devsel, IOMMU group 9
+
+00:08.1 PCI bridge: Advanced Micro Devices, Inc. [AMD] Phoenix Internal GPP Bridge to Bus [C:A] (prog-if 00 [Normal decode])
+	Subsystem: Advanced Micro Devices, Inc. [AMD] Phoenix Internal GPP Bridge to Bus [C:A]
+	Flags: bus master, fast devsel, latency 0, IRQ 36, IOMMU group 10
+	Bus: primary=00, secondary=65, subordinate=65, sec-latency=0
+	I/O behind bridge: 1000-1fff [size=4K] [16-bit]
+	Memory behind bridge: 98000000-986fffff [size=7M] [32-bit]
+	Prefetchable memory behind bridge: 8000000000-80107fffff [size=264M] [32-bit]
+	Capabilities: <access denied>
+	Kernel driver in use: pcieport
+
+00:08.2 PCI bridge: Advanced Micro Devices, Inc. [AMD] Phoenix Internal GPP Bridge to Bus [C:A] (prog-if 00 [Normal decode])
+	Subsystem: Advanced Micro Devices, Inc. [AMD] Phoenix Internal GPP Bridge to Bus [C:A]
+	Flags: bus master, fast devsel, latency 0, IRQ 37, IOMMU group 11
+	Bus: primary=00, secondary=66, subordinate=66, sec-latency=0
+	I/O behind bridge: [disabled] [32-bit]
+	Memory behind bridge: 98a00000-98afffff [size=1M] [32-bit]
+	Prefetchable memory behind bridge: 8010800000-80108fffff [size=1M] [32-bit]
+	Capabilities: <access denied>
+	Kernel driver in use: pcieport
+
+00:08.3 PCI bridge: Advanced Micro Devices, Inc. [AMD] Phoenix Internal GPP Bridge to Bus [C:A] (prog-if 00 [Normal decode])
+	Subsystem: Advanced Micro Devices, Inc. [AMD] Phoenix Internal GPP Bridge to Bus [C:A]
+	Flags: bus master, fast devsel, latency 0, IRQ 38, IOMMU group 12
+	Bus: primary=00, secondary=67, subordinate=67, sec-latency=0
+	I/O behind bridge: [disabled] [32-bit]
+	Memory behind bridge: 98700000-989fffff [size=3M] [32-bit]
+	Prefetchable memory behind bridge: [disabled] [64-bit]
+	Capabilities: <access denied>
+	Kernel driver in use: pcieport
+
+00:14.0 SMBus: Advanced Micro Devices, Inc. [AMD] FCH SMBus Controller (rev 71)
+	Subsystem: Lenovo Device 38a6
+	Flags: 66MHz, medium devsel, IOMMU group 13
+	Kernel driver in use: piix4_smbus
+	Kernel modules: i2c_piix4, sp5100_tco
+
+00:14.3 ISA bridge: Advanced Micro Devices, Inc. [AMD] FCH LPC Bridge (rev 51)
+	Subsystem: Lenovo Device 387e
+	Flags: bus master, 66MHz, medium devsel, latency 0, IOMMU group 13
+
+00:18.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Phoenix Data Fabric; Function 0
+	Flags: fast devsel, IOMMU group 14
+
+00:18.1 Host bridge: Advanced Micro Devices, Inc. [AMD] Phoenix Data Fabric; Function 1
+	Flags: fast devsel, IOMMU group 14
+
+00:18.2 Host bridge: Advanced Micro Devices, Inc. [AMD] Phoenix Data Fabric; Function 2
+	Flags: fast devsel, IOMMU group 14
+
+00:18.3 Host bridge: Advanced Micro Devices, Inc. [AMD] Phoenix Data Fabric; Function 3
+	Flags: fast devsel, IOMMU group 14
+	Kernel driver in use: k10temp
+	Kernel modules: k10temp
+
+00:18.4 Host bridge: Advanced Micro Devices, Inc. [AMD] Phoenix Data Fabric; Function 4
+	Flags: fast devsel, IOMMU group 14
+
+00:18.5 Host bridge: Advanced Micro Devices, Inc. [AMD] Phoenix Data Fabric; Function 5
+	Flags: fast devsel, IOMMU group 14
+
+00:18.6 Host bridge: Advanced Micro Devices, Inc. [AMD] Phoenix Data Fabric; Function 6
+	Flags: fast devsel, IOMMU group 14
+
+00:18.7 Host bridge: Advanced Micro Devices, Inc. [AMD] Phoenix Data Fabric; Function 7
+	Flags: fast devsel, IOMMU group 14
+
+01:00.0 Non-Volatile memory controller: Samsung Electronics Co Ltd NVMe SSD Controller PM9C1a (DRAM-less) (prog-if 02 [NVM Express])
+	Subsystem: Samsung Electronics Co Ltd Device a801
+	Flags: bus master, fast devsel, latency 0, IRQ 47, IOMMU group 15
+	Memory at 98e00000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: <access denied>
+	Kernel driver in use: nvme
+	Kernel modules: nvme
+
+02:00.0 Ethernet controller: Realtek Semiconductor Co., Ltd. RTL8111/8168/8211/8411 PCI Express Gigabit Ethernet Controller (rev 15)
+	Subsystem: Lenovo Device 396f
+	Flags: bus master, fast devsel, latency 0, IRQ 124, IOMMU group 16
+	I/O ports at 6000 [size=256]
+	Memory at 98d04000 (64-bit, non-prefetchable) [size=4K]
+	Memory at 98d00000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: <access denied>
+	Kernel driver in use: r8169
+	Kernel modules: r8169
+
+03:00.0 SD Host controller: O2 Micro, Inc. OZ711 SD/MMC Card Reader Controller (rev 01) (prog-if 01)
+	DeviceName: Realtek
+	Subsystem: O2 Micro, Inc. Device 0002
+	Flags: bus master, fast devsel, latency 0, IRQ 84, IOMMU group 17
+	Memory at 98c01000 (32-bit, non-prefetchable) [size=4K]
+	Memory at 98c00000 (32-bit, non-prefetchable) [size=2K]
+	Capabilities: <access denied>
+	Kernel driver in use: sdhci-pci
+	Kernel modules: sdhci_pci
+
+04:00.0 Network controller: MEDIATEK Corp. MT7921 802.11ax PCIe Wireless Network Adapter [Filogic 330]
+	Subsystem: Lenovo Device e0bc
+	Flags: bus master, fast devsel, latency 0, IRQ 129, IOMMU group 18
+	Memory at 8010900000 (64-bit, prefetchable) [size=1M]
+	Memory at 8010a00000 (64-bit, prefetchable) [size=16K]
+	Memory at 8010a04000 (64-bit, prefetchable) [size=4K]
+	Capabilities: <access denied>
+	Kernel driver in use: mt7921e
+	Kernel modules: mt7921e
+
+05:00.0 Non-Volatile memory controller: KIOXIA Corporation Exceria Plus G3 NVMe SSD (DRAM-less) (rev 01) (prog-if 02 [NVM Express])
+	Subsystem: KIOXIA Corporation Device 00fb
+	Flags: bus master, fast devsel, latency 0, IRQ 48, IOMMU group 19
+	Memory at 98b00000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: <access denied>
+	Kernel driver in use: nvme
+	Kernel modules: nvme
+
+65:00.0 VGA compatible controller: Advanced Micro Devices, Inc. [AMD/ATI] HawkPoint1 (rev cc) (prog-if 00 [VGA controller])
+	Subsystem: Lenovo Device 3801
+	Flags: bus master, fast devsel, latency 0, IRQ 41, IOMMU group 20
+	Memory at 8000000000 (64-bit, prefetchable) [size=256M]
+	Memory at 98000000 (64-bit, prefetchable) [size=2M]
+	I/O ports at 1000 [size=256]
+	Memory at 98600000 (32-bit, non-prefetchable) [size=512K]
+	Capabilities: <access denied>
+	Kernel driver in use: amdgpu
+	Kernel modules: amdgpu
+
+65:00.1 Audio device: Advanced Micro Devices, Inc. [AMD/ATI] Radeon High Definition Audio Controller (prog-if 00 [HDA compatible])
+	Subsystem: Lenovo Device 3836
+	Flags: bus master, fast devsel, latency 0, IRQ 127, IOMMU group 21
+	Memory at 986c8000 (32-bit, non-prefetchable) [size=16K]
+	Capabilities: <access denied>
+	Kernel driver in use: snd_hda_intel
+	Kernel modules: snd_hda_intel
+
+65:00.2 Encryption controller: Advanced Micro Devices, Inc. [AMD] Phoenix CCP/PSP 3.0 Device
+	Subsystem: Lenovo Device 3807
+	Flags: bus master, fast devsel, latency 0, IRQ 100, IOMMU group 22
+	Memory at 98500000 (32-bit, non-prefetchable) [size=1M]
+	Memory at 986ce000 (32-bit, non-prefetchable) [size=8K]
+	Capabilities: <access denied>
+	Kernel driver in use: ccp
+	Kernel modules: ccp
+
+65:00.3 USB controller: Advanced Micro Devices, Inc. [AMD] Device 15b9 (prog-if 30 [XHCI])
+	Subsystem: Lenovo Device 380b
+	Flags: bus master, fast devsel, latency 0, IRQ 39, IOMMU group 23
+	Memory at 98200000 (64-bit, non-prefetchable) [size=1M]
+	Capabilities: <access denied>
+	Kernel driver in use: xhci_hcd
+
+65:00.4 USB controller: Advanced Micro Devices, Inc. [AMD] Device 15ba (prog-if 30 [XHCI])
+	Subsystem: Lenovo Device 380a
+	Flags: bus master, fast devsel, latency 0, IRQ 41, IOMMU group 24
+	Memory at 98300000 (64-bit, non-prefetchable) [size=1M]
+	Capabilities: <access denied>
+	Kernel driver in use: xhci_hcd
+
+65:00.5 Multimedia controller: Advanced Micro Devices, Inc. [AMD] Audio Coprocessor (rev 63)
+	Subsystem: Lenovo Device 389b
+	Flags: bus master, fast devsel, latency 0, IRQ 126, IOMMU group 25
+	Memory at 98680000 (32-bit, non-prefetchable) [size=256K]
+	Memory at 8010000000 (64-bit, prefetchable) [size=8M]
+	Capabilities: <access denied>
+	Kernel driver in use: snd_pci_ps
+	Kernel modules: snd_pci_acp3x, snd_rn_pci_acp3x, snd_pci_acp5x, snd_pci_acp6x, snd_acp_pci, snd_rpl_pci_acp6x, snd_pci_ps, snd_sof_amd_renoir, snd_sof_amd_rembrandt, snd_sof_amd_vangogh, snd_sof_amd_acp63, snd_sof_amd_acp70
+
+65:00.6 Audio device: Advanced Micro Devices, Inc. [AMD] Ryzen HD Audio Controller (prog-if 00 [HDA compatible])
+	Subsystem: Lenovo Device 3896
+	Flags: bus master, fast devsel, latency 0, IRQ 128, IOMMU group 26
+	Memory at 986c0000 (32-bit, non-prefetchable) [size=32K]
+	Capabilities: <access denied>
+	Kernel driver in use: snd_hda_intel
+	Kernel modules: snd_hda_intel
+
+65:00.7 Signal processing controller: Advanced Micro Devices, Inc. [AMD] Sensor Fusion Hub
+	Subsystem: Lenovo Device 381b
+	Flags: bus master, fast devsel, latency 0, IRQ 39, IOMMU group 27
+	Memory at 98400000 (32-bit, non-prefetchable) [size=1M]
+	Memory at 986cc000 (32-bit, non-prefetchable) [size=8K]
+	Capabilities: <access denied>
+	Kernel driver in use: pcie_mp2_amd
+	Kernel modules: amd_sfh
+
+66:00.0 Non-Essential Instrumentation [1300]: Advanced Micro Devices, Inc. [AMD] Phoenix Dummy Function
+	Subsystem: Lenovo Device 3845
+	Flags: bus master, fast devsel, latency 0, IOMMU group 28
+	Capabilities: <access denied>
+
+66:00.1 Signal processing controller: Advanced Micro Devices, Inc. [AMD] AMD IPU Device
+	Subsystem: Lenovo Device 3810
+	Flags: bus master, fast devsel, latency 0, IRQ 48, IOMMU group 29
+	Memory at 98a00000 (32-bit, non-prefetchable) [size=512K]
+	Memory at 98ac0000 (32-bit, non-prefetchable) [size=8K]
+	Memory at 8010800000 (64-bit, prefetchable) [size=256K]
+	Memory at 98a80000 (32-bit, non-prefetchable) [size=256K]
+	Capabilities: <access denied>
+	Kernel driver in use: amdxdna
+	Kernel modules: amdxdna
+
+67:00.0 Non-Essential Instrumentation [1300]: Advanced Micro Devices, Inc. [AMD] Phoenix Dummy Function
+	Subsystem: Lenovo Device 3845
+	Flags: bus master, fast devsel, latency 0, IOMMU group 30
+	Capabilities: <access denied>
+
+67:00.3 USB controller: Advanced Micro Devices, Inc. [AMD] Device 15c0 (prog-if 30 [XHCI])
+	Subsystem: Lenovo Device 3805
+	Flags: bus master, fast devsel, latency 0, IRQ 43, IOMMU group 31
+	Memory at 98700000 (64-bit, non-prefetchable) [size=1M]
+	Capabilities: <access denied>
+	Kernel driver in use: xhci_hcd
+
+67:00.4 USB controller: Advanced Micro Devices, Inc. [AMD] Device 15c1 (prog-if 30 [XHCI])
+	Subsystem: Lenovo Device 3804
+	Flags: bus master, fast devsel, latency 0, IRQ 45, IOMMU group 32
+	Memory at 98800000 (64-bit, non-prefetchable) [size=1M]
+	Capabilities: <access denied>
+	Kernel driver in use: xhci_hcd
+
+67:00.6 USB controller: Advanced Micro Devices, Inc. [AMD] Pink Sardine USB4/Thunderbolt NHI controller #2 (prog-if 40 [USB4 Host Interface])
+	Subsystem: Advanced Micro Devices, Inc. [AMD] Pink Sardine USB4/Thunderbolt NHI controller #2
+	Flags: bus master, fast devsel, latency 0, IRQ 88, IOMMU group 33
+	Memory at 98900000 (64-bit, non-prefetchable) [size=512K]
+	Capabilities: <access denied>
+	Kernel driver in use: thunderbolt
+	Kernel modules: thunderbolt
+

@@ -1,0 +1,12 @@
+NAME        FSTYPE FSVER LABEL       UUID                                 FSAVAIL FSUSE% MOUNTPOINTS
+nvme1n1                                                                                  
+├─nvme1n1p1 vfat   FAT32             B00B-BF5C                             261.7M    49% /boot
+├─nvme1n1p2 swap   1                 24f94551-0c7b-4f0e-8eff-797fbb337949                [SWAP]
+└─nvme1n1p3 btrfs        dmArch      1ca0444b-bd24-4781-8dd3-b6d30f479f31  602.4G    33% /home
+                                                                                         /
+nvme0n1                                                                                  
+├─nvme0n1p1 vfat   FAT32 SYSTEM_DRV  18E4-5133                                           
+├─nvme0n1p2                                                                              
+├─nvme0n1p3 ntfs         Windows-SSD E02AE4D22AE4A6AE                                    
+├─nvme0n1p4 ntfs         Data        C6C0B5ACC0B5A2DB                                    
+└─nvme0n1p5 ntfs         WINRE_DRV   D008E54408E529E4                                    

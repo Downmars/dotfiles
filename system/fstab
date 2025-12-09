@@ -1,0 +1,14 @@
+# /dev/nvme1n1p3 LABEL=dmArch
+UUID=1ca0444b-bd24-4781-8dd3-b6d30f479f31	/         	btrfs     	rw,relatime,compress=zstd:3,ssd,discard=async,space_cache=v2,subvol=/@	0 0
+
+# /dev/nvme1n1p3 LABEL=dmArch
+UUID=1ca0444b-bd24-4781-8dd3-b6d30f479f31	/home     	btrfs     	rw,relatime,compress=zstd:3,ssd,discard=async,space_cache=v2,subvol=/@home	0 0
+
+# /dev/nvme1n1p1
+UUID=B00B-BF5C      	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
+
+# /dev/nvme1n1p2
+UUID=24f94551-0c7b-4f0e-8eff-797fbb337949	none      	swap      	defaults  	0 0
+
+# /dev/sda2
+UUID=02FE17E1FE17CC33 /mnt/externdisk ntfs-3g default,nofail 0 0
