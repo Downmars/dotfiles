@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-REPO_DIR="$HOME/dotfiles"
+REPO_DIR="$HOME/.config/dotfiles"
 SYSTEM_DIR="$REPO_DIR/system"
 PACMAN_LIST="$SYSTEM_DIR/pkglist.txt"
 AUR_LIST="$SYSTEM_DIR/aurlist.txt"
