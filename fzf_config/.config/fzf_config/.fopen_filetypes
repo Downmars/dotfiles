@@ -1,0 +1,53 @@
+# ~/.config/fopen_fd_bat/open_commands.conf
+
+# 文本文件
+txt=nvim
+md=nvim
+c=nvim
+cpp=nvim
+py=nvim
+sh=nvim
+java=nvim
+js=nvim
+html=nvim
+css=nvim
+
+# 图片文件
+jpg=feh
+jpeg=feh
+png=feh
+gif=feh
+bmp=feh
+svg=feh
+
+# PDF 文件
+pdf=evince
+
+# 视频文件
+mp4=mpv
+mkv=mpv
+avi=mpv
+mov=mpv
+flv=mpv
+
+# 音频文件
+mp3=mpv
+wav=mpv
+flac=mpv
+aac=mpv
+
+# 压缩文件
+zip=xdg-open
+tar=xdg-open
+gz=xdg-open
+bz2=xdg-open
+7z=xdg-open
+
+# 文档文件
+docx=libreoffice
+xlsx=libreoffice
+pptx=libreoffice
+
+# 其他文件类型
+rar=unrar
+

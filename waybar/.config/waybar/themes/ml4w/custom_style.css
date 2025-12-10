@@ -1,0 +1,396 @@
+/* -----------------------------------------------------
+ * Global Styles
+ * ----------------------------------------------------- */
+* {
+    background-color: #ffffff; 
+    color: #000000;
+    font-family: "Fira Sans Semibold", "Font Awesome 6 Free", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    min-height: 24px;
+    border: none;
+    border-radius: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+/* -----------------------------------------------------
+ * Waybar Window
+ * ----------------------------------------------------- */
+window#waybar {
+    opacity: 0.80;
+    background-color: transparent;
+    transition: background-color 0.5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+
+}
+
+/* -----------------------------------------------------
+ * Workspaces 
+ * ----------------------------------------------------- */
+
+#workspaces {
+    background-color: #000000;
+    margin: 4px 0px 4px 8px;
+    padding: 1px 2px 1px 2px;
+    border-radius: 12px;
+    border: 0px;
+    font-weight: bold;
+    font-style: normal;
+    opacity: 1;
+    font-size: 18px;
+}
+
+#workspaces button {
+    padding: 1px 1px;
+    margin: 3px 3px;
+    border-radius: 10px;
+    border: 0px;
+    transition: all 0.3s ease-in-out;
+    opacity: 0.6;
+}
+
+#workspaces button.active {
+    border-radius: 10px;
+    min-width: 40px;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+}
+
+#workspaces button:hover {
+    border-radius: 10px;
+    opacity:0.7;
+}
+
+/* -----------------------------------------------------
+ * Modules
+ * ----------------------------------------------------- */
+
+/* 调整 modules-left 和 modules-right 中 workspaces 的边距 */
+.modules-left > widget:first-child > #workspaces,
+.modules-right > widget:last-child > #workspaces {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* -----------------------------------------------------
+ * Custom Modules
+ * ----------------------------------------------------- */
+
+/* 通用的 Custom Modules 样式 */
+#custom-appmenu {
+    color: @textcolor2;
+    background-color: @backgroundlight;
+    border-radius: 12px;
+    padding: 1px 10px;
+    margin: 4px 0px 4px 8px;
+    opacity: 0.8;
+    font-size: 18px;
+    opacity: 1;
+}
+
+#custom-deepseek {
+    color: @textcolor2;
+    background-color: @backgroundlight;
+    border-radius: 12px;
+    padding: 1px 10px;
+    margin: 4px 0px 4px 8px;
+    opacity: 0.8;
+    font-size: 18px;
+    opacity: 1;
+}
+
+#custom-updates {
+    border-radius: 12px;
+    padding: 1px 10px;
+    margin: 4px 8px 4px 0px;
+    opacity: 0.8;
+    font-size: 18px;
+    opacity: 1;
+}
+
+
+#custom-updates {
+    background-color: @backgroundlight;
+    color: @textcolor2;
+}
+
+#custom-updates.green {
+    /* 已经使用 backgroundlight，无需额外设置 */
+}
+
+#custom-updates.yellow {
+    background-color: #ff9a3c;
+    color: #FFFFFF;
+}
+
+#custom-updates.red {
+    background-color: #dc2f2f;
+    color: #FFFFFF;
+}
+
+/* -----------------------------------------------------
+ * Hardware Group
+ * ----------------------------------------------------- */
+/* 通用硬件模块样式 */
+
+/* -----------------------------------------------------
+ * Tray
+ * ----------------------------------------------------- */
+#tray {
+    color: @textcolor2;
+    padding: 1px 10px;
+    margin: 4px 0px 4px 8px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+}
+
+/* -----------------------------------------------------
+ * Clock
+ * ----------------------------------------------------- */
+#clock {
+    font-size: 18px;
+    color: @textcolor1;
+    background-color: @backgroundlight;
+    border-radius: 12px;
+    padding: 1px 10px;
+    margin: 4px 8px 4px 0px;
+    opacity: 1;
+    border: 0px solid @bordercolor;   
+}
+
+/* -----------------------------------------------------
+ * Backlight
+ * ----------------------------------------------------- */
+#backlight {
+    background-color: @backgroundlight;
+    font-size: 18px;
+    color: @textcolor2;
+    border-radius: 12px;
+    padding: 1px 10px;
+    margin: 4px 8px 4px 0px;
+    opacity: 1;
+}
+
+/* -----------------------------------------------------
+ * Pulseaudio
+ * ----------------------------------------------------- */
+#pulseaudio {
+    background-color: @backgroundlight;
+    font-size: 18px;
+    color: @textcolor2;
+    border-radius: 12px;
+    padding: 1px 10px;
+    margin: 4px 8px 4px 0px;
+    opacity: 1;
+}
+
+#pulseaudio.muted {
+    background-color: @backgrounddark;
+    color: @textred;
+}
+
+/* -----------------------------------------------------
+ * Network
+ * ----------------------------------------------------- */
+#network {
+    background-color: @backgroundlight;
+    font-size: 18px;
+    color: @textcolor2;
+    border-radius: 12px;
+    padding: 1px 10px;
+    margin: 4px 8px 4px 0px;
+    opacity: 1;
+}
+
+#network.disconnected {
+    background-color: #B22222;
+    color: #ffffff;
+    animation: blink 0.5s linear infinite alternate;
+}
+
+/* -----------------------------------------------------
+ * Bluetooth
+ * ----------------------------------------------------- */
+#bluetooth, 
+#bluetooth.on, 
+#bluetooth.connected {
+    background-color: @backgroundlight;
+    font-size: 18px;
+    color: @textcolor2;
+    border-radius: 12px;
+    padding: 1px 10px;
+    margin: 4px 8px 4px 0px;
+    opacity: 1;
+}
+
+#bluetooth.off {
+    background-color: transparent;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* -----------------------------------------------------
+ * Battery
+ * ----------------------------------------------------- */
+#battery {
+    background-color: @backgroundlight;
+    font-size: 18px;
+    color: @textcolor2;
+    border-radius: 12px;
+    padding: 1px 10px;
+    margin: 4px 0px 4px 0px;
+    opacity: 1;
+}
+
+#battery.charging, 
+#battery.plugged {
+    color: @textgreen;
+    background-color: @backgroundlight;
+}
+
+#battery.critical:not(.charging) {
+    color: #ffffff;
+    background-color: #B22222;
+    animation: blink 0.5s linear infinite alternate;
+}
+
+/* -----------------------------------------------------
+ * Custom Music Module
+ * ----------------------------------------------------- */
+#custom-music {
+    background-color: @backgroundlight;
+    color: @textcolor2;
+    padding: 1px 10px;
+    margin: 4px 0px 4px 8px;
+    border-radius: 12px;
+    font-size: 18px;
+    /* display: flex; 
+    align-items: center;
+    gap: 5px; */
+    opacity: 1;
+}
+
+#custom-music.playing {
+    background-color: @workspacesbackground3; 
+}
+
+#custom-music.paused {
+    background-color: @workspacesbackground2; 
+}
+/*
+#custom-music.error {
+    background-color: @backgroundred;
+    animation: blink 0.5s linear infinite alternate;
+}
+
+#custom-music.text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+*/
+
+/* -----------------------------------------------------
+ * Record Module
+ * ----------------------------------------------------- */
+#custom-record {
+    color: #FF0000; /* 红色表示录制中 */
+    background-color: rgba(0, 0, 0, 1);
+    background-color: #ffffff; 
+    padding: 1px 10px;
+    margin: 4px 0px 4px 8px;
+    border-radius: 12px;
+    font-weight: bold;
+    opacity: 1;
+    font-size: 18px;
+}
+/* -----------------------------------------------------
+ * Transmission Module
+ * ----------------------------------------------------- */
+#custom-transmission {
+    color: #00FF00; /* 绿色表示 Transmission 活跃 */
+    background-color: #ffffff;  
+    padding: 1px 10px;
+    margin: 4px 0px 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    opacity: 1;
+    font-size: 18px;
+}
+
+
+/* -----------------------------------------------------
+ * Yt-dlp Module
+ * ----------------------------------------------------- */
+#custom-yt_dlp {
+    color: #FFD700; /* 金色表示 yt-dlp 活跃 */
+    background-color: #ffffff;
+    padding: 1px 10px;
+    margin: 4px 0px 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    opacity: 1;
+    font-size: 18px;
+}
+
+/* -----------------------------------------------------
+ * Httrack Module
+ * ----------------------------------------------------- */
+#custom-httrack {
+    color: #1E90FF; /* 蓝色表示 HTTrack 活跃 */
+    background-color: #ffffff;
+    padding: 1px 10px;
+    margin: 4px 0px 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    opacity: 1;
+    font-size: 18px;
+}
+
+/* -----------------------------------------------------
+ * Mount Module
+ * ----------------------------------------------------- */
+#custom-mounts {
+    background-color: @backgroundlight;
+    color: @textcolor2;
+    padding: 1px 10px;
+    margin: 4px 8px 4px 0px;
+    border-radius: 12px;
+    font-weight: bold;
+    opacity: 1;
+    font-size: 18px;
+}
+
+/* -----------------------------------------------------
+ * cava Module
+ * ----------------------------------------------------- */
+#cava {
+    background-color: @backgroundlight;
+    color: @textcolor2;
+    padding: 1px 10px;
+    margin: 4px 8px 4px 0px;
+    border-radius: 12px;
+    font-weight: bold;
+    opacity: 1;
+    font-size: 18px;
+}
+
+
+/* -----------------------------------------------------
+ * Animation Effects
+ * ----------------------------------------------------- */
+@keyframes blink {
+    to {
+        background-color: @backgroundlight;
+        color: @textcolor2;
+    }
+}
+

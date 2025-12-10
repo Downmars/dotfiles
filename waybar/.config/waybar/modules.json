@@ -1,0 +1,232 @@
+{
+  // -----------------------------------------------------
+  // Workspaces
+  // -----------------------------------------------------
+  "hyprland/workspaces": {
+    "on-scroll-up": "hyprctl dispatch workspace r-1",
+    "on-scroll-down": "hyprctl dispatch workspace r+1",
+    "on-click": "activate",
+    "active-only": false,
+    "all-outputs": true,
+    "format": " ",
+    "format-icons": {
+      "urgent": "",
+      "active": "",
+      "default": ""
+    },
+    "persistent-workspaces": {
+      "*": 6
+    }
+  },
+
+
+
+  // -----------------------------------------------------
+  // System Information
+  // -----------------------------------------------------
+  
+  "battery": {
+    "min-length": 0,
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "interval": 1,
+    "format": "{icon} {capacity}%-{power:02.0f}W",
+    "format-charging": "  {capacity}%+{power:02.0f}W",
+    "format-plugged": "  {capacity}%+{power:02.0f}W",
+    "format-alt": "{icon}  {time}",
+    "format-icons": ["", "", "", "", ""]
+  },
+
+  "pulseaudio": {
+    "format": "{icon}  {volume}%",
+    "format-bluetooth": "{icon}  {volume}%",
+    "format-bluetooth-muted": " {volume}%",
+    "format-muted": " {volume}%",
+    "format-source": "{volume}% ",
+    "format-source-muted": "",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", "", ""]
+    },
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "on-click-right": "pavucontrol"
+  },
+
+  "bluetooth": {
+    "format": " {status}",
+    "format-disabled": "",
+    "format-off": "",
+    "interval": 30,
+    "on-click": "blueman-manager",
+    "format-no-controller": ""
+  },
+
+  "backlight": {
+    "format": "{icon} {percent:3}%",
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "scroll-step": 1
+  },
+
+  "network": {
+    "min-length": 18,
+    "format": "{ifname}",
+    "interval": 1,
+    "format-wifi": "{bandwidthUpBits:01} {bandwidthDownBits:01}",
+    // "format-wifi": "{bandwidthUpBits:05.1f} {bandwidthDownBits:05.1f}",
+    "format-ethernet": "  {ifname}",
+    "format-disconnected": "Disconnected",
+    "tooltip-format": " {ifname} via {gwaddri}",
+    "tooltip-format-wifi": "  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\nUp: {bandwidthUpBits} Down: {bandwidthDownBits}",
+    "tooltip-format-ethernet": " {ifname}\nIP: {ipaddr}\nUp: {bandwidthUpBits} Down: {bandwidthDownBits}",
+    "tooltip-format-disconnected": "Disconnected",
+    "on-click": "~/.config/ml4w/settings/networkmanager.sh",
+    "on-click-right": "~/.config/ml4w/scripts/nm-applet.sh toggle"
+  },
+
+  "clock": {
+    "format": "{:%m/%d %a %H:%M}",
+    "on-click": "ags toggle calendar",
+    "tooltip": false
+  },
+
+  
+  "tray": {
+    "icon-size": 21,
+    "spacing": 10
+  },
+
+  // -----------------------------------------------------
+  // Custom Modules
+  // -----------------------------------------------------
+  
+  //
+  "custom/updates": {
+    "format": "  {}",
+    "escape": true,
+    "return-type": "json",
+    "exec": "~/.config/ml4w/scripts/updates.sh",
+    "interval": 3600,
+    "on-click": "$(cat ~/.config/ml4w/settings/terminal.sh) --class dotfiles-floating -e ~/.config/ml4w/scripts/installupdates.sh",
+    "on-click-right": "~/.config/ml4w/settings/software.sh"
+  },
+
+  // Keybindings Manager
+  "custom/keybindings": {
+    "format": "",
+    "on-click": "~/.config/hypr/scripts/keybindings.sh",
+    "tooltip": false
+  },
+
+  // Application Menu
+  "custom/appmenu": {
+    "format": "",
+    "icon-size": 21,
+    "on-click": "~/.config/ml4w/scripts/wlogout.sh",
+    "tooltip-format": "Fish Menu"
+  },
+
+  // Music Control
+  "custom/music": {
+    "max-length": 30,
+    "format": "{}",
+    "return-type": "json",
+    "escape": true,
+    "interval": 5,
+    "exec": "~/.config/system_scripts/mediaplayer.py",
+    // "exec": "~/.config/hypr/scripts/hypridle.sh",
+    "interval": 5,
+    "on-click": "playerctl play-pause",
+    "tooltip": false
+  },
+  "custom/record": {
+    "exec": "~/.config/hypr/scripts/record.sh",
+    "interval": 1,
+    "return-type": "json",
+    "format": "{}",
+    "max-length": 100
+  },
+  "custom/transmission": {
+    "exec": "~/.config/hypr/scripts/transmission_status.sh",
+    "interval": 1,
+    "return-type": "json",
+    "format": "{}",
+    "max-length": 100
+  },
+  "custom/yt_dlp": {
+    "exec": "~/.config/hypr/scripts/yt_dlp_status.sh",
+    "interval": 1,
+    "return-type": "json",
+    "format": "{}",
+    "max-length": 100
+  },
+  "custom/httrack": {
+    "exec": "~/.config/hypr/scripts/httrack_status.sh",
+    "interval": 1,
+    "return-type": "json",
+    "format": "{}",
+    "max-length": 100
+  },
+  "custom/mounts": {
+    "exec": "~/.config/hypr/scripts/mount_status.sh",
+    "interval": 10,
+    "return-type": "json",
+    "format": "{}",
+    "max-length": 100,
+
+    "on-click-right": "~/Scripts/unmount.sh",  // 单击挂载的硬盘
+},
+  "cava": {
+        // "cava_config": "~/.config/cava/config",
+        "framerate": 30,
+        "autosens": 1,
+        "sensitivity": 100,
+        "bars": 14,
+        "lower_cutoff_freq": 50,
+        "higher_cutoff_freq": 10000,
+        "method": "pulse",
+        "source": "auto",
+        "stereo": true,
+        "reverse": false,
+        "bar_delimiter": 0,
+        "monstercat": false,
+        "waves": false,
+        "noise_reduction": 0.77,
+        "input_delay": 2,
+        "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
+        "actions": {
+                   "on-click-right": "mode"
+                   }
+    },
+
+    "custom/deepseek": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "/home/dm/bin/ollama_deepseek.sh",
+        "on-click-right": "pkill -f 'ollama run deepseek-r1:14b'"  // 右键完全关闭
+    }
+
+}
+ 

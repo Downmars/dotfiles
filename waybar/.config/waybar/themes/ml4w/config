@@ -1,0 +1,47 @@
+{
+    // General Settings
+    "layer": "top",
+    "margin-top": 7,
+    "margin-bottom": 0,
+    "margin-left": 7,
+    "margin-right": 7,    
+    "spacing": 0,
+
+    // Load External Module Configurations
+    "include": [
+        "~/.config/ml4w/settings/waybar-quicklinks.json",
+        "~/.config/waybar/modules.json"
+    ],
+
+    // Modules Center
+    "modules-center": [
+        "cava"
+    ],
+
+    // Modules Left
+    "modules-left": [
+        "custom/deepseek",
+        "hyprland/workspaces",
+        "custom/music",
+        "custom/transmission",
+        "custom/yt_dlp",
+        "custom/httrack",
+        "custom/record",
+        
+        "tray"
+    ],
+
+    // Modules Right    
+    "modules-right": [
+        "custom/updates",
+        "custom/mounts",
+        // "custom/music",
+        "network",
+        "pulseaudio",
+        "backlight",
+        "bluetooth",
+        "battery", 
+        "clock"
+    ]
+}
+
